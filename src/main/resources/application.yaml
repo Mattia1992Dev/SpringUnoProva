@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: MyDemo
+  jackson:
+    serialization:
+      indent-output: true
+  #imposta porta default Utilizziamo application.yaml e non l'application properties.
+  #Dichiara su quale porta deve partire l'applicazione
+server:
+  port: 8083
