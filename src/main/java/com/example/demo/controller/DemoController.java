@@ -46,13 +46,14 @@ public class DemoController {
     }
 
     @PostMapping("persona") //possono coesistere 2 con URI identiche e metodo diverso
-    public List<Persona> addPersone(@RequestBody Persona persona){
-        List<Persona> p= new ArrayList<>();
-        Persona p1= new Persona("Dante","Alighieri", LocalDate.of(1992,02,23),170);
-        Persona p2= new Persona("Dante","Alighieri", LocalDate.of(1992,02,23),170);
+    public List<Persona> addPersone(@RequestBody Persona persona) {
+        List<Persona> p = new ArrayList<>();
+        Persona p1 = new Persona("Dante", "Alighieri", LocalDate.of(1992, 02, 23), 170);
+        Persona p2 = new Persona("Dante", "Alighieri", LocalDate.of(1992, 02, 23), 170);
         //date di default sempre separate dal trattino e scritte al contrario anno mese giorno
-        p.add(p1); p.add(p2);
-        Persona p3= new Persona();
+        p.add(p1);
+        p.add(p2);
+        Persona p3 = new Persona();
         p3.setNome(persona.getNome().toUpperCase());
         p3.setCognome(persona.getCognome().toUpperCase());
         p3.setDob(persona.getDob());
@@ -61,7 +62,7 @@ public class DemoController {
         p.add(persona);
         return p;
         // aggiunto un commento di prova
-        // aggiungo secondo commento di prova CONFLITTO
+
     }
 
     @PatchMapping("persone")//localhost:8083/persone?incrementaAltezza=100.
