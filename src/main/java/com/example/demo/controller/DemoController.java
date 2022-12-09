@@ -63,7 +63,7 @@ public class DemoController {
 
     }
 
-    @PatchMapping("persone")//localhost:8083/persone?incrementaAltezzza=100
+    @PatchMapping("persone")//localhost:8083/persone?incrementaAltezza=100
     public List<Persona> patchPersone(@RequestParam int incrementaAltezza){
         List<Persona> p= new ArrayList<>();
         Persona p1= new Persona("Dante","Alighieri", LocalDate.of(1992,02,23),170);
@@ -95,7 +95,7 @@ public class DemoController {
 // nel caso della registrazione faccio una put perche salvo una risorsa sul server. Persisto sul file system un nuovo dato.
 //metodo patch fa una modifica parziale [I programmatori non lo usano mai]
 
-//La delete non si fa quasi mai perchè di solito si utilizzano i database relazionali
+//La delete non si fa quasi mai perchè di solito si utilizzano i database relazionali.
 
 
 
