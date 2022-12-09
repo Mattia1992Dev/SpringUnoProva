@@ -61,7 +61,7 @@ public class DemoController {
         p.add(persona);
         return p;
         // aggiunto un commento di prova
-        // aggiungo secondo commento di prova
+        // aggiungo secondo commento di prova CONFLITTO
     }
 
     @PatchMapping("persone")//localhost:8083/persone?incrementaAltezza=100.
