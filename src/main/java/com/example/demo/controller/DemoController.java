@@ -60,10 +60,10 @@ public class DemoController {
         p.add(p3);
         p.add(persona);
         return p;
-
+        // aggiunto un commento di prova
     }
 
-    @PatchMapping("persone")//localhost:8083/persone?incrementaAltezza=100
+    @PatchMapping("persone")//localhost:8083/persone?incrementaAltezza=100.
     public List<Persona> patchPersone(@RequestParam int incrementaAltezza){
         List<Persona> p= new ArrayList<>();
         Persona p1= new Persona("Dante","Alighieri", LocalDate.of(1992,02,23),170);
